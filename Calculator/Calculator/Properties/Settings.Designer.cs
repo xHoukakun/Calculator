@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Taschenrechner.Properties
+namespace Calculator.Properties
 {
 
 

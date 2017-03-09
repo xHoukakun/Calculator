@@ -47,6 +47,12 @@
             this.buttonMal = new System.Windows.Forms.Button();
             this.buttonGeteilt = new System.Windows.Forms.Button();
             this.textBoxErsteZahl = new System.Windows.Forms.TextBox();
+            this.textBoxZweiteZahl = new System.Windows.Forms.TextBox();
+            this.textBoxErgebnis = new System.Windows.Forms.TextBox();
+            this.Anzeige1 = new System.Windows.Forms.TextBox();
+            this.Anzeige2 = new System.Windows.Forms.TextBox();
+            this.Anzeige3 = new System.Windows.Forms.TextBox();
+            this.Anzeige4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -215,17 +221,93 @@
             // textBoxErsteZahl
             // 
             this.textBoxErsteZahl.BackColor = System.Drawing.Color.Silver;
+            this.textBoxErsteZahl.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBoxErsteZahl.Enabled = false;
-            this.textBoxErsteZahl.Location = new System.Drawing.Point(12, 13);
+            this.textBoxErsteZahl.Location = new System.Drawing.Point(12, 57);
             this.textBoxErsteZahl.Name = "textBoxErsteZahl";
             this.textBoxErsteZahl.Size = new System.Drawing.Size(200, 20);
             this.textBoxErsteZahl.TabIndex = 19;
+            // 
+            // textBoxZweiteZahl
+            // 
+            this.textBoxZweiteZahl.BackColor = System.Drawing.Color.Silver;
+            this.textBoxZweiteZahl.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBoxZweiteZahl.Enabled = false;
+            this.textBoxZweiteZahl.Location = new System.Drawing.Point(12, 102);
+            this.textBoxZweiteZahl.Name = "textBoxZweiteZahl";
+            this.textBoxZweiteZahl.Size = new System.Drawing.Size(200, 20);
+            this.textBoxZweiteZahl.TabIndex = 20;
+            // 
+            // textBoxErgebnis
+            // 
+            this.textBoxErgebnis.BackColor = System.Drawing.Color.LimeGreen;
+            this.textBoxErgebnis.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBoxErgebnis.Enabled = false;
+            this.textBoxErgebnis.Location = new System.Drawing.Point(12, 147);
+            this.textBoxErgebnis.Name = "textBoxErgebnis";
+            this.textBoxErgebnis.Size = new System.Drawing.Size(200, 20);
+            this.textBoxErgebnis.TabIndex = 21;
+            // 
+            // Anzeige1
+            // 
+            this.Anzeige1.BackColor = System.Drawing.SystemColors.Control;
+            this.Anzeige1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Anzeige1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Anzeige1.Enabled = false;
+            this.Anzeige1.Location = new System.Drawing.Point(12, 128);
+            this.Anzeige1.Name = "Anzeige1";
+            this.Anzeige1.Size = new System.Drawing.Size(200, 13);
+            this.Anzeige1.TabIndex = 22;
+            this.Anzeige1.Text = "Ergebnis";
+            // 
+            // Anzeige2
+            // 
+            this.Anzeige2.BackColor = System.Drawing.SystemColors.Control;
+            this.Anzeige2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Anzeige2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Anzeige2.Enabled = false;
+            this.Anzeige2.Location = new System.Drawing.Point(12, 83);
+            this.Anzeige2.Name = "Anzeige2";
+            this.Anzeige2.Size = new System.Drawing.Size(200, 13);
+            this.Anzeige2.TabIndex = 23;
+            this.Anzeige2.Text = "2. Zahl";
+            // 
+            // Anzeige3
+            // 
+            this.Anzeige3.BackColor = System.Drawing.SystemColors.Control;
+            this.Anzeige3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Anzeige3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Anzeige3.Enabled = false;
+            this.Anzeige3.Location = new System.Drawing.Point(12, 31);
+            this.Anzeige3.Name = "Anzeige3";
+            this.Anzeige3.Size = new System.Drawing.Size(200, 13);
+            this.Anzeige3.TabIndex = 24;
+            this.Anzeige3.Text = "1.Zahl";
+            // 
+            // Anzeige4
+            // 
+            this.Anzeige4.BackColor = System.Drawing.SystemColors.Control;
+            this.Anzeige4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Anzeige4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Anzeige4.Enabled = false;
+            this.Anzeige4.Location = new System.Drawing.Point(12, 5);
+            this.Anzeige4.Name = "Anzeige4";
+            this.Anzeige4.Size = new System.Drawing.Size(200, 13);
+            this.Anzeige4.TabIndex = 25;
+            this.Anzeige4.Text = "Rechner";
+            this.Anzeige4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(231, 435);
+            this.Controls.Add(this.Anzeige4);
+            this.Controls.Add(this.Anzeige3);
+            this.Controls.Add(this.Anzeige2);
+            this.Controls.Add(this.Anzeige1);
+            this.Controls.Add(this.textBoxErgebnis);
+            this.Controls.Add(this.textBoxZweiteZahl);
             this.Controls.Add(this.textBoxErsteZahl);
             this.Controls.Add(this.buttonGeteilt);
             this.Controls.Add(this.buttonMal);
@@ -273,6 +355,12 @@
         private System.Windows.Forms.Button buttonMal;
         private System.Windows.Forms.Button buttonGeteilt;
         private System.Windows.Forms.TextBox textBoxErsteZahl;
+        private System.Windows.Forms.TextBox textBoxZweiteZahl;
+        private System.Windows.Forms.TextBox textBoxErgebnis;
+        private System.Windows.Forms.TextBox Anzeige1;
+        private System.Windows.Forms.TextBox Anzeige2;
+        private System.Windows.Forms.TextBox Anzeige3;
+        private System.Windows.Forms.TextBox Anzeige4;
     }
 }
 

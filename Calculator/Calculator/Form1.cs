@@ -17,6 +17,8 @@ namespace Calculator
         private bool bErsteStelle = false;
         private bool bEineRechenoperation = false;
         private int iNameRechenoperation = 0;       //0=Keine 1=Addieren 2=Multiplizieren 3=Minus 4=Geteilt
+        private string sTextBoxInhalt = "";
+        private StringBuilder sbTextBoxInhalt = new StringBuilder();
         public Form1()
         {
             InitializeComponent();
@@ -238,6 +240,28 @@ namespace Calculator
                 bRechenoperation = true;
             }
 
+        }
+
+        private void buttonReverse_Click(object sender, EventArgs e)
+        {
+
+            bErsteStelle = true;
+            if (bRechenoperation == false)
+            {
+                sTextBoxInhalt = textBoxErsteZahl.Text.ToString();
+                 if (sTextBoxInhalt.Length > 0)          
+                        {
+                            
+                            if (sTextBoxInhalt.Length - 1 = ",")        
+                            {
+                              bDezimal=false;
+                            }
+                 }
+            }
+            if (bRechenoperation == true)
+            {
+                textBoxZweiteZahl.AppendText("7");
+            }
         }
     }
 }

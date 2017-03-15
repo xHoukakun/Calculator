@@ -202,6 +202,7 @@
             this.buttonReverse.TabIndex = 15;
             this.buttonReverse.Text = "<--";
             this.buttonReverse.UseVisualStyleBackColor = true;
+            this.buttonReverse.Click += new System.EventHandler(this.buttonReverse_Click);
             // 
             // buttonMinus
             // 

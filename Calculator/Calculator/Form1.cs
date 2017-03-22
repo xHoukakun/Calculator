@@ -248,6 +248,7 @@ namespace Calculator
             bErsteStelle = true;
             if (bRechenoperation == false)
             {
+                
                 sTextBoxInhalt = textBoxErsteZahl.Text.ToString();
                  if (sTextBoxInhalt.Length > 0)          
                         {
